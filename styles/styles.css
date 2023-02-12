@@ -526,6 +526,43 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  grid-column: 1 / 3;
+  grid-row: 2/3;
+  margin: 0;
+  padding: 0;
+
+}
+
+.cards-hotels-list{
+  width: 1060px;
+  display: grid;
+  grid-template-columns: repeat(3,340px);
+  margin: 0 auto;
+  padding: 0;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.cards-hotels-product{
+  padding: 20px;
+  display: grid;
+  border: 1px solid #E6E6E6;
+border-radius: 4px;
+
+}
+
+.cards-hotels-item{
+  list-style: none;
+ display: grid;
+ grid-template-rows: 212px repeat(4, min-content );
+ grid-template-columns: 140px 140px;
+ column-gap: 20px;
+ row-gap : 16px;
+}
+
+.product-card-image{
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .cards-hotels-link {
@@ -538,13 +575,20 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  grid-row: 3/4;
+  margin: 0;
+  padding: 0;
 }
-
 .cards-hotels-price {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 0;
+  padding: 0;
+  justify-self: end;
 }
 
 .product-card-button {
@@ -554,10 +598,11 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
+  display: inline-block;
   background-color: #756157;
   padding: 8px 26px;
-  border: 1px;
   border-radius: 4px;
+  grid-row: 4/5;
 }
 
 .product-card-button-inactive {
@@ -568,11 +613,12 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #82B3D3;
-  padding: 8px 26px;
-  border: 1px;
+  display: inline-block;
+  padding: 8px 24px;
   border-radius: 4px;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
-
 .product-card-rating {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -580,12 +626,28 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #000000;
+  display: inline-block;
   background-color: #F2F2F2;
   width: 118px;
-  padding: 8px 22px;
-  border: 1px;
+  padding: 8px 0 8px 24px;
   border-radius: 4px;
   text-transform: uppercase;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin: 0;
+}
+
+.product-card-star{
+
+  background-image: url("../images/main-hotels/stars.svg");
+  background-repeat: repeat-x;
+  color: #82B3D3;
+  width: 58px;
+  height: 17px;
+  grid-row: 5/6;
+  align-self: center;
+
+
 }
 
 .pagination{
