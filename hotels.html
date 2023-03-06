@@ -19,7 +19,7 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link-current">Гостиницы</a>
@@ -139,10 +139,10 @@
                   <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
                   <div class="randge_wrapper-inputs">
                     <label class="catalog-filter-label">
-                      <input class="range-input-l" type="number" value="0" placeholder="длывллылл" name="min-price">
+                      <input class="range-input-l" type="number" value="0" placeholder="" name="min-price">
                     </label>
                     <label class="catalog-filter-label">
-                      <input class="range-input-r" type="number" value="9000" name="max-price" placeholder="длывллылл">
+                      <input class="range-input-r" type="number" value="9000" name="max-price" placeholder="">
                     </label>
                   </div>
                   <div class="range">
@@ -171,22 +171,25 @@
 
         <section class="cards-hotels">
           <div class="name">
-            <h3 class="cards-seach">Найдено гостиниц:<span class="cards-seach-namber">38</span></h3>
+            <h3 class="cards-seach">Найдено гостиниц: <span class="cards-seach-namber">38</span></h3>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала дешёвое</option>
+              <option value="popular">Сначала дешевые</option>
               <option value="cheap">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <a href="#" class="cards-button">
-              <img src="images/main-hotels/tile.svg" width="16px" height="14" alt="">
+            <a href="#" class="cards-button-current">
+              <span class="cards-button-tile"></span>
+            <!--  <img src="images/main-hotels/tile.svg" width="16px" height="14" alt=""> -->
               <span class="visually-hidden">Показать карточки</span>
             </a>
             <a href="#" class="cards-button">
-              <img src="images/main-hotels/slideshow.svg" width="16px" height="14" alt="">
+              <span class="cards-button-slideshow"></span>
+            <!--  <img src="images/main-hotels/slideshow.svg" width="16px" height="14" alt=""> -->
               <span class="visually-hidden">Показать одну карточку</span>
             </a>
             <a class="cards-button" href="#">
-              <img src="images/main-hotels/list.svg" width="16px" height="14" alt="">
+              <span class="cards-button-list"></span>
+             <!-- <img src="images/main-hotels/list.svg" width="16px" height="14" alt=""> -->
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -202,7 +205,7 @@
                 <b class="cards-hotels-price">От 4000 &#8381;</b>
                 <a class="product-card-button" href="#">Подробнее</a>
                 <a class="product-card-button-inactive" href="#">В избранное</a>
-                <span class="product-card-star"></span>
+                <span class="product-card-star-4"></span>
                 <h4 class="product-card-rating">Рейтинг: <span class="numeric
                 ">8,5</span></h4>
               </li>
@@ -219,7 +222,8 @@
                 <b class="cards-hotels-price">От 5000 &#8381;</b>
                 <a class="product-card-button" href="#">Подробнее</a>
                 <a class="product-card-button-inactive" href="#">В избранное</a>
-                <span class="product-card-star">.</span>
+                <span class="product-card-button-active">В избранном</span>
+                <span class="product-card-star"></span>
                 <h4 class="product-card-rating">Рейтинг: <span>9,2</span></h4>
               </li>
             </div>
@@ -255,7 +259,7 @@
             </div>
         </section>
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item-current">
             <a class="pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
