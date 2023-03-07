@@ -241,19 +241,20 @@
 
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="order">
-            <span class="check-in-time">Дата заезда:</span>
-
-            <input class="check-in-time-text" type="text" id="appointment-date" name="appointment-date"
+            <label class="check-in-time" for="in-time">Дата заезда:</label>
+            <input class="check-in-time-text" type="text" id="in-time" name="check-in-time"
               value="27 апреля 2020" placeholder="Укажите дату">
-            <span class="date-of-departure">Дата выезда:</span>
-            <input class="date-of-departure-text" type="text" id="appointment-time" name="appointment-time"
+            <label class="date-of-departure" for="of-departure">Дата выезда:</label>
+            <input class="date-of-departure-text" type="text" id="of-departure" name="date-of-departure"
               value="1 сентября 2023" placeholder="Укажите дату">
-            <span class="order-adults">Взрослые:</span>
+            <label class="order-adults" for="adults">Взрослые:</label>
             <button class="adults-button-minus" type="button"></button>
-            <input class="field-human" type="text" id="appointment-phone" name="appointment-phone" placeholder=""
+            <input class="field-human" type="text" id="adults" name="adults" placeholder=""
               value="2">
+            <div class="adults-plus">
             <button class="adults-button-plus" type="button"></button>
-            <span class="field-children">Дети:</span>
+          </div>
+            <label class="field-children" for="children">Дети:</label>
             <div class="children-content">
               <button class="info">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>i<span class="content">Укажите
@@ -262,8 +263,10 @@
               </button>
             </div>
             <button class="children-button-minus" type="button"></button>
-            <input class="text-field-children" type="text" id="appointment-name" name="appointment-name" value="2">
+            <input class="text-field-children" type="text" id="children" name="children" value="2">
+            <div class="children-plus">
             <button class="children-button-plus" type="button"></button>
+            </div>
             <button class="order-button" type="submit">Найти</button>
           </div>
         </form>

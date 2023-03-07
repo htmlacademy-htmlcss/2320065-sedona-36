@@ -1645,6 +1645,7 @@ outline: 3px solid rgba(131, 179, 211, 1);
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
+  padding-right: 50px;
 }
 
 .date-of-departure {
@@ -1680,6 +1681,7 @@ outline: 3px solid rgba(131, 179, 211, 1);
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
+  padding-right: 50px;
 }
 
 .order-adults {
@@ -1698,10 +1700,23 @@ outline: 3px solid rgba(131, 179, 211, 1);
   position: relative;
 }
 
+
+.adults-button-minus::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  left: 11px;
+  top: 13px;
+}
+
+
 .adults-button-minus::after {
   position: absolute;
   content: "";
-  width: 15px;
+  width: 14px;
   height: 2px;
   background-color: #000000;
   left: 14px;
@@ -1710,15 +1725,26 @@ outline: 3px solid rgba(131, 179, 211, 1);
   opacity: 0.3;
 }
 
+.adults-button-minus:focus {
+  outline: none;
+}
+
 .adults-button-minus:hover::after {
   opacity: 1;
 }
 
 .adults-button-minus:focus::after {
   opacity: 1;
-  outline: 2px solid rgba(130, 179, 211, 1);
-  outline-offset: 5px ;
-  border-radius: 4px;
+}
+
+.adults-button-minus:focus::before {
+   outline: 2px solid #82B3D3;
+}
+
+.adults-button-minus:active::after,
+.adults-button-minus:active::before {
+  opacity: 0.3;
+  outline: none;
 }
 
 .field-human {
@@ -1734,26 +1760,41 @@ outline: 3px solid rgba(131, 179, 211, 1);
   padding-left: 10px;
 }
 
-.adults-button-plus {
+.adults-plus {
   grid-column: 4/5;
   grid-row: 3/4;
-  cursor: pointer;
+  width: 40px;
+  height: 48px;
   background: #F2F2F2;
   border: none;
   border-radius: 0 4px 4px 0;
   position: relative;
 }
 
+.adults-button-plus {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.adults-button-plus:focus {
+   outline: 2px solid #82B3D3;
+}
 
 .adults-button-plus::after,
 .adults-button-plus::before {
   position: absolute;
   content: "";
-  width: 15px;
+  width: 14px;
   height: 2px;
   background-color: #000000;
-  left: 13px;
-  top: 23px;
+  left: 3px;
+  top: 8px;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -1762,6 +1803,24 @@ outline: 3px solid rgba(131, 179, 211, 1);
   transform: rotate(90deg);
 }
 
+.adults-button-plus:hover::before,
+.adults-button-plus:hover::after {
+  opacity: 1;
+}
+
+.adults-button-plus:focus::before,
+.adults-button-plus:focus::after {
+  opacity: 1;
+}
+
+.adults-button-plus:active::before,
+.adults-button-plus:active::after {
+  opacity: 0.3;
+}
+
+.adults-button-plus:active {
+  outline: none;
+}
 
 .field-children {
   grid-column: 6/7;
@@ -1815,7 +1874,7 @@ outline: 3px solid rgba(131, 179, 211, 1);
   content: '';
   position: absolute;
   left: 10px;
-  top: 32px;
+  top: 33px;
   border: 10px solid transparent;
   border-bottom: 10px solid rgba(51, 51, 51, 1);
   z-index: 1;
@@ -1841,6 +1900,17 @@ outline: 3px solid rgba(131, 179, 211, 1);
   position: relative;
 }
 
+.children-button-minus::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  left: 11px;
+  top: 13px;
+}
+
 .children-button-minus::after {
   position: absolute;
   content: "";
@@ -1851,6 +1921,28 @@ outline: 3px solid rgba(131, 179, 211, 1);
   top: 23px;
   cursor: pointer;
   opacity: 0.3;
+}
+
+.children-button-minus:focus {
+  outline: none;
+}
+
+.children-button-minus:hover::after {
+  opacity: 1;
+}
+
+.children-button-minus:focus::after {
+  opacity: 1;
+}
+
+.children-button-minus:focus::before {
+   outline: 2px solid #82B3D3;
+}
+
+.children-button-minus:active::after,
+.children-button-minus:active::before {
+  opacity: 0.3;
+  outline: none;
 }
 
 .text-field-children {
@@ -1864,8 +1956,26 @@ outline: 3px solid rgba(131, 179, 211, 1);
   line-height: 24px;
   padding-left: 10px;
 }
+.check-in-time-text:hover,
+.date-of-departure-text:hover,
+.field-human:hover,
+.text-field-children:hover {
+  background-color: #E6E6E6;
+}
 
-.children-button-plus {
+.check-in-time-text:focus,
+.date-of-departure-text:focus{
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+.field-human:focus,
+.text-field-children:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  z-index: 3;
+}
+
+.children-plus {
   grid-column: -1/-2;
   grid-row: 3/4;
   cursor: pointer;
@@ -1875,15 +1985,30 @@ outline: 3px solid rgba(131, 179, 211, 1);
   position: relative;
 }
 
+.children-button-plus {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.children-button-plus:focus {
+   outline: 2px solid #82B3D3;
+}
+
 .children-button-plus::after,
 .children-button-plus::before {
   position: absolute;
   content: "";
-  width: 15px;
+  width: 14px;
   height: 2px;
   background-color: #000000;
-  left: 13px;
-  top: 23px;
+  left: 3px;
+  top: 8px;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -1892,6 +2017,24 @@ outline: 3px solid rgba(131, 179, 211, 1);
   transform: rotate(90deg);
 }
 
+.children-button-plus:hover::before,
+.children-button-plus:hover::after {
+  opacity: 1;
+}
+
+.children-button-plus:focus::before,
+.children-button-plus:focus::after {
+  opacity: 1;
+}
+
+.children-button-plus:active::before,
+.children-button-plus:active::after {
+  opacity: 0.3;
+}
+
+.children-button-plus:active {
+  outline: none;
+}
 
 .order-button {
   grid-column: 1/-1;
@@ -1907,4 +2050,15 @@ outline: 3px solid rgba(131, 179, 211, 1);
   line-height: 24px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.order-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #83B3D3;;
 }
