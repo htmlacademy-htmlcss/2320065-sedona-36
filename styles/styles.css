@@ -589,7 +589,6 @@ body {
   line-height: 24px;
   width: 420px;
   padding: 13px;
-  border-color: none;
   border-style: none;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
@@ -629,7 +628,6 @@ body {
   background-color: #82B3D3;
   padding: 8px 50px;
   text-transform: uppercase;
-  border-color: none;
   border-style: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
