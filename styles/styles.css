@@ -421,12 +421,21 @@ body {
   width: 230px;
   padding: 0 0;
   margin: 30px 0;
+  color: #333333
 }
 
 .advantages-specification-current {
   width: 230px;
   text-align: center;
   margin: 30px 0;
+  color: #333333
+}
+
+.advantages-specification-color {
+  width: 230px;
+  text-align: center;
+  margin: 30px 0;
+  color: #ffffff
 }
 
 .advantages-object {
@@ -475,6 +484,7 @@ body {
   line-height: 26px;
   margin: 0 auto 64px;
   padding: 0 100px;
+  color: #333333;
 }
 
 .hotel-search {
@@ -500,7 +510,7 @@ body {
   line-height: 26px;
   width: 592px;
   margin: 0 auto 54px;
-
+  color: #333333;
 }
 
 .hotel-search-link {
@@ -544,7 +554,7 @@ body {
   color: #ffffff;
   background: #82B3D3;
   background-image: url("../images/footer/sabsc.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
   min-height: 415px;
@@ -573,6 +583,17 @@ body {
   margin: 0 auto 58px;
 }
 
+.footer-distribution-description-color {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 475px;
+  margin: 0 auto 58px;
+  color: #333333;
+}
+
 .footer-distribution-form {
   display: flex;
   justify-content: center;
@@ -584,6 +605,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   margin-left: 1px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -631,6 +653,7 @@ body {
   border-style: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .footer-button-subscription:hover,
@@ -758,7 +781,7 @@ body {
 .inner-catalog {
   color: #ffffff;
   background-image: url("../images/main-hotels/header.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #82B3D3;
   min-height: 412px;
@@ -1101,6 +1124,7 @@ body {
 
 .button-apply:active {
   background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-apply:disabled {
@@ -1700,7 +1724,7 @@ body {
 .date-of-departure::after {
   position: absolute;
   content: "";
-  width: 16px;
+  width: 17px;
   height: 15px;
   background-image: url("../images/modal-windows/date.svg");
   opacity: 0.3;
