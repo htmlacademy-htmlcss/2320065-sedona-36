@@ -334,6 +334,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .color-white {
@@ -614,7 +615,7 @@ body {
 .footer-distribution-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 145px;
+  margin-bottom: 125px;
 }
 
 .field {
@@ -1929,6 +1930,7 @@ input[type="number"]:focus {
   left: 10px;
   top: 13px;
   cursor: pointer;
+  background-color: rgb(242, 242, 242);
 }
 
 .adults-button-plus:focus {
@@ -2204,6 +2206,7 @@ input[type="number"]:focus {
   left: 10px;
   top: 13px;
   cursor: pointer;
+  background-color: rgb(242, 242, 242);
 }
 
 .children-button-plus:focus {
