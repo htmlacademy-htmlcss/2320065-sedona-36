@@ -1393,12 +1393,12 @@ input[type="number"]:focus {
   outline: 2px solid #000000;
 }
 
-.cards-hotels-link:focus-visible
 .cards-hotels-name {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
   grid-row: 3/4;
   margin: 0;
   padding: 0;
@@ -1410,6 +1410,7 @@ input[type="number"]:focus {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
   grid-column: 2/3;
   grid-row: 3/4;
   margin: 0;
@@ -1521,7 +1522,7 @@ input[type="number"]:focus {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #000000;
+  color: #333333;
   display: inline-block;
   background-color: #F2F2F2;
   width: 118px;
